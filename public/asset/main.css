@@ -1,0 +1,320 @@
+html:not(.no-js) [data-aos=fade-right] {
+    -webkit-transform: translate3d(-300px, 0, 0);
+    transform: translate3d(-300px, 0, 0);
+}
+
+html:not(.no-js) [data-aos=fade-left] {
+    -webkit-transform: translate3d(300px, 0, 0);
+    transform: translate3d(300px, 0, 0);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Gabriola';
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+    background: linear-gradient(#ccffff, #1affff);
+}
+
+.main-all {
+    overflow: hidden;
+}
+
+.header .row {
+    align-items: center;
+}
+
+.header .header-item .icon-bars {
+    display: none;
+}
+
+.header .header-item {
+    display: flex;
+    justify-content: center;
+}
+
+.header .header-item>a>i {
+    font-size: 1.25rem;
+    padding: 0 12px;
+    opacity: .6;
+    transition: .3s linear;
+    color: var(--bs-dark);
+}
+
+.header .header-item>a:hover i {
+    transform: scale(1.2);
+    opacity: 1;
+    color: #ff4d4d;
+}
+
+.header .header-item img {
+    width: 120px;
+    height: auto;
+}
+
+.header .header-item form {
+    position: relative;
+    padding: 0 12px;
+    background-color: #f2f2f2;
+    border-radius: 40px;
+    height: 48px;
+    line-height: 48px;
+}
+
+.header .header-item form input {
+    background: none;
+    outline: none;
+    border: none;
+}
+
+.header .header-item form i {
+    position: absolute;
+    padding: 16px;
+    background-color: #78c7d2;
+    border-radius: 40px;
+    color: var(--bs-white);
+    right: 0;
+}
+
+.navigation-pc {
+    background-color: var(--bs-dark);
+}
+
+.navigation-pc.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    animation: fadeInDown .3s linear;
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0)
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0)
+    }
+}
+
+.navigation-pc ul {
+    text-align: center;
+}
+
+.navigation-pc .nav-item {
+    display: inline-block;
+    text-transform: uppercase;
+    overflow: hidden;
+    position: relative;
+    top: 2px;
+    font-weight: 500;
+    font-size: 1rem;
+    border-radius: 4px;
+    line-height: 59.2px;
+    letter-spacing: 2px;
+}
+
+.nav-item.active {
+    background-color: #78c7d2;
+}
+
+.navigation-pc .nav-item a {
+    display: inline-block;
+    padding: 0 54px;
+    position: relative;
+    z-index: 1;
+    transition: .3s linear;
+    color: var(--bs-white);
+}
+
+.navigation-pc .nav-item:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 490%;
+    width: 140%;
+    background: #78c7d2;
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .4s ease-in-out;
+    -webkit-transform: translateX(-98%) translateY(25%) rotate(45deg);
+    transform: translateX(-98%) translateY(25%) rotate(45deg);
+}
+
+.navigation-pc .nav-item:hover::after {
+    -webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg);
+    transform: translateX(-9%) translateY(-25%) rotate(45deg);
+}
+
+.owl-theme .owl-dots .owl-dot span {
+    width: 30px;
+    height: 8px;
+    border: 1px solid var(--bs-dark);
+    border-radius: 4px;
+    background: none;
+}
+
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+    background: var(--bs-dark);
+}
+
+.slider img {
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
+}
+
+.title h1 {
+    text-align: center;
+    padding: 50px 0 20px 0;
+    font-size: 3.8rem;
+}
+
+.title h1 i {
+    position: relative;
+    top: 6px;
+    animation: rotate infinite 10s linear;
+    color: #44cc00;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.information-text .information-text-left {
+    margin-top: 40px;
+}
+
+.information-text .information-text-left h2 {
+    position: relative;
+    text-align: center;
+    padding: 8px 0;
+    margin: 0 50px 8px 50px;
+    cursor: pointer;
+    transition: .3s linear;
+}
+
+.information-text .information-text-left h2:hover,
+.information-text .information-text-left h2.active {
+    border-right: 4px solid#4ce600;
+    border-radius: 4px;
+    background-color: rgba(217, 217, 217, 0.623);
+}
+
+.information-text .information-text-right {
+    background-color: #f2f2f2;
+    border-radius: 4px;
+    padding: 8px 12px;
+}
+
+.information-text .information-text-right .item-text {
+    opacity: 0;
+    display: none;
+    transition: .3s linear;
+}
+
+.information-text .information-text-right .item-text.active {
+    display: block;
+    opacity: 1;
+}
+
+.information-text .information-text-right .item-text i {
+    padding-right: 12px;
+}
+
+.information-text .information-text-right .item-text .list-df {
+    padding-bottom: 8px;
+}
+
+.information-text .information-text-right .item-text .list-df p {
+    font-size: 1.5rem;
+}
+
+.thumb-vc {
+    padding-top: 100px;
+}
+
+.thumb-vc .cl-df {
+    background-color: var(--bs-dark);
+    color: #d9d9d9;
+}
+
+.thumb-vc .item-l .change {
+    visibility: hidden;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: .3s linear;
+}
+
+.thumb-vc .item-l .change .hightligh-text {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    right: 12px;
+    padding: 16px;
+    background-color: #d9d9d975;
+    color: var(--bs-dark);
+    border-radius: 16px;
+    transition: .3s ease;
+}
+
+.thumb-vc .item-l .first-img {
+    position: relative;
+    width: 450px;
+    margin: 0 auto;
+}
+
+.thumb-vc .item-l .first-img img {
+    width: 100%;
+    height: auto;
+}
+
+.thumb-vc .item-l .first-img:hover .change {
+    visibility: visible;
+    opacity: 1;
+    filter: brightness(90%);
+}
+
+.thumb-vc .item-l .first-img:hover .change .hightligh-text {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.thumb-vc .item-r {
+    padding-top: 30px;
+}
