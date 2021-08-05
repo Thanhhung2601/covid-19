@@ -17,11 +17,12 @@
 <body>
     <div class="main-all">
         <!--Header-->
-        <header class="header">
-            <div class="container" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="50">
+        <header class="header " id="home">
+            <div class="container inverted" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="50">
                 <div class="row">
+
                     <div class="col-sm-4">
-                        <div class="header-item">
+                        <div class="header-item inverted">
                             <a href="https://www.facebook.com/profile.php?id=100008092212616"><i class="fab fa-facebook-f"></i></a>
                             <a href="https://www.instagram.com/kobe.2601/"><i class="fab fa-instagram"></i></a>
                             <a href="https://twitter.com/NguynTh04313635"><i class="fab fa-twitter"></i></a>
@@ -32,39 +33,50 @@
                             </div>
                         </div>
                     </div>
+
                     <div class="col-sm-4">
-                        <div class="header-item">
+                        <div class="header-item ">
                             <a href=""><img src="./img/first.jpg" alt=""></a>
                         </div>
                     </div>
+
                     <div class="col-sm-4">
                         <div class="header-item">
                             <form action="">
                                 <input type="text" placeholder="Search . . .">
                                 <i class="fas fa-search"></i>
                             </form>
-
+                            <div class="darkmode-btn">
+                                <input type="checkbox" class="checkbox" id="checkbox">
+                                <label for="checkbox" class="label">
+                                    <i class="fas fa-moon cl-moon"></i>
+                                    <i class="fas fa-sun cl-sun"></i>
+                                    <div class="cs"></div>
+                                </label>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <nav class="navigation-pc" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+
+            <nav class="navigation-pc inverted" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
                 <div class="container">
                     <ul>
-                        <li class="nav-item active"><a href="">Home <i class="fas fa-home"></i></a></li>
-                        <li class="nav-item"><a href="#covid-19">Covid 19 <i class="fas fa-viruses"></i></a></li>
-                        <li class="nav-item"><a href="">Consequence <i class="fas fa-praying-hands"></i></a></li>
+                        <li class="nav-item active home "><a href="#home">Home <i class="fas fa-home"></i></a></li>
+                        <li class="nav-item covid-19 "><a href="#covid-19">Covid 19 <i class="fas fa-viruses"></i></a></li>
+                        <li class="nav-item consequence"><a href="#consequence">Consequence <i class="fas fa-praying-hands"></i></a></li>
                         <li class="nav-item"><a href="">What should We Do?</a></li>
                     </ul>
                 </div>
             </nav>
+
         </header>
 
         <!--End header-->
 
         <!--Slider-->
 
-        <section class="slider" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="800">
+        <section class="slider inverted" id="home" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="800">
             <div class="owl-carousel owl-theme">
                 <div class="item">
                     <img src="./img/slider1.jpg" alt="">
@@ -89,10 +101,11 @@
         <section class="overview-covid" id="covid-19" data-aos="fade-in" data-aos-duration="1500">
             <div class="container">
                 <div class="title">
-                    <h1>Coronaviruss <i class="fas fa-virus"></i></h1>
+                    <h1>Coronaviruss <i class="fas fa-virus rotate"></i></h1>
                 </div>
                 <div class="information-text">
                     <div class="row">
+
                         <div class="col-md-4">
                             <div class="information-text-left">
                                 <h2 class="active">Overview</h2>
@@ -100,8 +113,10 @@
                                 <h2>Symptoms</h2>
                             </div>
                         </div>
+
                         <div class="col-md-8 ">
                             <div class="information-text-right">
+
                                 <div class="item-text active">
                                     <p>Coronavirus disease (COVID-19) is an infectious disease caused by a newly discovered coronavirus.</p>
                                     <p>Most people infected with the COVID-19 virus will experience mild to moderate respiratory illness and recover without requiring special treatment. Older people, and those with underlying medical problems like cardiovascular
@@ -111,6 +126,7 @@
                                     <p>The COVID-19 virus spreads primarily through droplets of saliva or discharge from the nose when an infected person coughs or sneezes, so it’s important that you also practice respiratory etiquette (for example, by coughing
                                         into a flexed elbow).</p>
                                 </div>
+
                                 <div class="item-text">
                                     <p>To prevent infection and to slow transmission of COVID-19, do the following:</p>
                                     <ul>
@@ -123,7 +139,9 @@
                                         <li><i class="fas fa-plus-circle"></i>Practice physical distancing by avoiding unnecessary travel and staying away from large groups of people.</li>
                                     </ul>
                                 </div>
+
                                 <div class="item-text">
+
                                     <div class="list-df">
                                         <p>Most common symptoms:</p>
                                         <ul>
@@ -132,6 +150,7 @@
                                             <li><i class="fas fa-plus-circle"></i>tiredness.</li>
                                         </ul>
                                     </div>
+
                                     <div class="list-df">
                                         <p>Less common symptoms:</p>
                                         <ul>
@@ -144,6 +163,7 @@
                                             <li><i class="fas fa-plus-circle"></i>a rash on skin, or discolouration of fingers or toes.</li>
                                         </ul>
                                     </div>
+
                                     <div class="list-df">
                                         <p>Serious symptoms:</p>
                                         <ul>
@@ -158,8 +178,9 @@
                     </div>
                 </div>
 
-                <div class="thumb-vc">
+                <div class="thumb-vc inverted">
                     <div class="row">
+
                         <div class="col-md-6" data-aos="fade-right" data-aos-duration="1300">
                             <div class="item-l">
                                 <div class="first-img">
@@ -175,6 +196,7 @@
 
                             </div>
                         </div>
+
                         <div class="col-md-6 cl-df" data-aos="fade-left" data-aos-duration="1300">
                             <div class="item-r">
                                 <p>The world is in the midst of a COVID-19 pandemic. As WHO and partners work together on the response -- tracking the pandemic, advising on critical interventions, distributing vital medical supplies to those in need--- they
@@ -192,6 +214,59 @@
 
             </div>
         </section>
+
+        <section class="consequence-sc inverted" id="consequence">
+            <div class="container">
+
+                <div class="title">
+                    <h1>Consequence . . .</h1>
+                </div>
+
+                <div class="text-hl">
+                    <p>The COVID-19 pandemic is forcing many of us to change the way we go about our daily lives. With those changes, some of us are experiencing a wave of losses: economic, social, physical and emotional. For some, these losses may build
+                        up and lead to feelings of grief.COVID-19 has brought dramatic changes to our lives, including many losses, such as: </p>
+                </div>
+
+                <div class="row">
+
+                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1500">
+                        <div class="consequence-image">
+                            <img src="./img/consequence1.jpg" alt="">
+                            <div class="attribute-img">
+                                <p>Friends: Despite the virtual connections available, for many the inability to connect with friends and family in the same physical space has led to isolation and loneliness. Humans need connection.</p>
+                                <p>Sense of personal freedom: While physical distancing measures are now a necessity, they may leave individuals feeling like a prisoner in their own homes.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="350" data-aos-duration="1500">
+                        <div class="consequence-image">
+                            <img src="./img/consequence2.jpg" alt="">
+                            <div class="attribute-img">
+                                <p>Economic security: The pandemic has resulted in large unemployment numbers, a fear of further job loss and an economic recession.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="650" data-aos-duration="1500">
+                        <div class="consequence-image">
+                            <img src="./img/consequence3.jpg" alt="">
+                            <div class="attribute-img">
+                                <p>Health: Fears of contracting COVID-19 have led to increased health risks for the most vulnerable. Of particular note is secondary harm for people who need care but are avoiding hospitals, or for those who can’t access their
+                                    doctor easily due to increased demand due to the pandemic.</p>
+                                <p>Death: Many have lost a family member or friend to COVID-19.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="action-end">
+            h1
+        </section>
+
     </div>
 
     <script src="./public/asset/jquery/Jquery.js"></script>
@@ -199,6 +274,8 @@
     <script src="./public/asset/AOS/aos.js"></script>
     <script src="./public/asset/js.js"></script>
     <script src="./public/asset/js2.js"></script>
+
+
 </body>
 
 </html>
