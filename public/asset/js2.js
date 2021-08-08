@@ -8,23 +8,30 @@ const btnsNavPc = getElements('.navigation-pc .nav-item');
 const sections = getElements('section');
 const btnHome = getElement('.home');
 const darkMode = getElement('.darkmode-btn .label');
+const header = getElement('.header');
+const iconBars = getElement('.icon-bars');
+const overlay = getElement('.overlay');
+const navMb = getElement('.navigation-mb');
+const iconTimes = getElement('.icon-times');
 
 
-function handleEvent() {
+
+function handleEvents() {
 
     window.addEventListener('scroll', () => {
-        if (window.scrollY > 184.8) {
+        if (window.scrollY > 120) {
             navPc.classList.add('fixed');
 
         } else {
             navPc.classList.remove('fixed');
+
 
         }
         let current = '';
         sections.forEach(section => {
             const sectionTop = section.offsetTop;
             const sectionHeight = section.clientHeight;
-            if (pageYOffset > (sectionTop - sectionHeight / 3)) {
+            if (pageYOffset > (sectionTop - sectionHeight / 6)) {
                 current = section.getAttribute('id');
             }
         })
@@ -52,8 +59,25 @@ function handleEvent() {
         getElements('.inverted').forEach(item => {
             item.classList.toggle('invert')
         })
+
+    });
+
+    iconBars.addEventListener('click', () => {
+        navMb.classList.add('active');
+        overlay.classList.add('active');
+
+    });
+
+    iconTimes.addEventListener('click', () => {
+        navMb.classList.remove('active');
+        overlay.classList.remove('active');
+    })
+
+    overlay.addEventListener('click', () => {
+        overlay.classList.remove('active');
+        navMb.classList.remove('active');
     })
 
 }
 
-handleEvent();
+handleEvents();

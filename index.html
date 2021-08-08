@@ -12,47 +12,65 @@
     <link rel="stylesheet" href="./public/asset/owlcarousel/assets/owl.theme.default.min.css">
     <link rel="stylesheet" href="./public/asset/AOS/aos.css">
     <link rel="stylesheet" href="./public/asset/main.css">
+
 </head>
 
 <body>
     <div class="main-all">
         <!--Header-->
         <header class="header " id="home">
-            <div class="container inverted" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="50">
-                <div class="row">
+            <div class="h-top">
+                <div class="container inverted " data-aos="fade-up" data-aos-duration="1000" data-aos-delay="50">
+                    <div class="row">
 
-                    <div class="col-sm-4">
-                        <div class="header-item inverted">
-                            <a href="https://www.facebook.com/profile.php?id=100008092212616"><i class="fab fa-facebook-f"></i></a>
-                            <a href="https://www.instagram.com/kobe.2601/"><i class="fab fa-instagram"></i></a>
-                            <a href="https://twitter.com/NguynTh04313635"><i class="fab fa-twitter"></i></a>
-                            <a href="https://www.linkedin.com/in/nguyen-thanh-hung-909293208/"><i class="fab fa-linkedin-in"></i></a>
-                            <a href="https://github.com/Thanhhung2601"><i class="fab fa-github"></i></a>
-                            <div class="icon-bars">
-                                <i class="fas fa-bars"></i>
+                        <div class="col-4">
+                            <div class="header-item inverted">
+                                <div class="link">
+                                    <a href="https://www.facebook.com/profile.php?id=100008092212616">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                    <a href="https://www.instagram.com/kobe.2601/">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                    <a href="https://twitter.com/NguynTh04313635">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                    <a href="https://www.linkedin.com/in/nguyen-thanh-hung-909293208/">
+                                        <i class="fab fa-linkedin-in"></i>
+                                    </a>
+                                    <a href="https://github.com/Thanhhung2601">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                                <div class="icon-bars">
+                                    <i class="fas fa-bars"></i>
+                                    <p>Menu</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="col-sm-4">
-                        <div class="header-item ">
-                            <a href=""><img src="./img/first.jpg" alt=""></a>
+                        <div class="col-4">
+                            <div class="header-item ">
+                                <a href="">
+                                    <img src="./img/first.jpg" alt="">
+                                </a>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="col-sm-4">
-                        <div class="header-item">
-                            <form action="">
-                                <input type="text" placeholder="Search . . .">
-                                <i class="fas fa-search"></i>
-                            </form>
-                            <div class="darkmode-btn">
-                                <input type="checkbox" class="checkbox" id="checkbox">
-                                <label for="checkbox" class="label">
-                                    <i class="fas fa-moon cl-moon"></i>
-                                    <i class="fas fa-sun cl-sun"></i>
-                                    <div class="cs"></div>
-                                </label>
+                        <div class="col-4">
+                            <div class="header-item">
+                                <form action="">
+                                    <input type="text" placeholder="Search . . .">
+                                    <i class="fas fa-search"></i>
+                                </form>
+                                <div class="darkmode-btn">
+                                    <input type="checkbox" class="checkbox" id="checkbox">
+                                    <label for="checkbox" class="label">
+                                        <i class="fas fa-moon cl-moon"></i>
+                                        <i class="fas fa-sun cl-sun"></i>
+                                        <div class="cs"></div>
+                                    </label>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -62,11 +80,46 @@
             <nav class="navigation-pc inverted" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
                 <div class="container">
                     <ul>
-                        <li class="nav-item active home "><a href="#home">Home <i class="fas fa-home"></i></a></li>
-                        <li class="nav-item covid-19 "><a href="#covid-19">Covid 19 <i class="fas fa-viruses"></i></a></li>
-                        <li class="nav-item consequence"><a href="#consequence">Consequence <i class="fas fa-praying-hands"></i></a></li>
-                        <li class="nav-item"><a href="">What should We Do?</a></li>
+                        <li class="nav-item  home ">
+                            <a href="#home">Home 
+                                <i class="fas fa-home"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item covid-19 ">
+                            <a href="#covid-19">Covid 19 
+                                <i class="fas fa-viruses"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item consequence">
+                            <a href="#consequence">Consequence 
+                                <i class="fas fa-praying-hands"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item end">
+                            <a href="#end">What should We Do?</a>
+                        </li>
                     </ul>
+                </div>
+            </nav>
+
+
+            <nav class="navigation-mb">
+                <ul>
+                    <li class="home">
+                        <a href="#home">Home</a>
+                    </li>
+                    <li class="covid-19">
+                        <a href="#covid-19">Covid 19</a>
+                    </li>
+                    <li class="consequence">
+                        <a href="#consequence">Consequence</a>
+                    </li>
+                    <li class="end">
+                        <a href="#end">What should we do ?</a>
+                    </li>
+                </ul>
+                <div class="icon-times">
+                    <i class="fas fa-times"></i>
                 </div>
             </nav>
 
@@ -98,7 +151,7 @@
 
         <!--End slider-->
 
-        <section class="overview-covid" id="covid-19" data-aos="fade-in" data-aos-duration="1500">
+        <section class="overview-covid" id="covid-19" data-aos="fade-in" data-aos-delay="50" data-aos-duration="2000">
             <div class="container">
                 <div class="title">
                     <h1>Coronaviruss <i class="fas fa-virus rotate"></i></h1>
@@ -131,11 +184,17 @@
                                     <p>To prevent infection and to slow transmission of COVID-19, do the following:</p>
                                     <ul>
                                         <li><i class="fas fa-plus-circle"></i>Wash your hands regularly with soap and water, or clean them with alcohol-based hand rub.</li>
+
                                         <li><i class="fas fa-plus-circle"></i>Maintain at least 1 metre distance between you and people coughing or sneezing.</li>
+
                                         <li><i class="fas fa-plus-circle"></i>Avoid touching your face</li>
+
                                         <li><i class="fas fa-plus-circle"></i>Cover your mouth and nose when coughing or sneezing.</li>
+
                                         <li><i class="fas fa-plus-circle"></i>Stay home if you feel unwell.</li>
+
                                         <li><i class="fas fa-plus-circle"></i>Refrain from smoking and other activities that weaken the lungs.</li>
+
                                         <li><i class="fas fa-plus-circle"></i>Practice physical distancing by avoiding unnecessary travel and staying away from large groups of people.</li>
                                     </ul>
                                 </div>
@@ -146,7 +205,9 @@
                                         <p>Most common symptoms:</p>
                                         <ul>
                                             <li><i class="fas fa-plus-circle"></i>fever.</li>
+
                                             <li><i class="fas fa-plus-circle"></i>dry cough.</li>
+
                                             <li><i class="fas fa-plus-circle"></i>tiredness.</li>
                                         </ul>
                                     </div>
@@ -155,11 +216,17 @@
                                         <p>Less common symptoms:</p>
                                         <ul>
                                             <li><i class="fas fa-plus-circle"></i>aches and pains.</li>
+
                                             <li><i class="fas fa-plus-circle"></i>sore throat.</li>
+
                                             <li><i class="fas fa-plus-circle"></i>diarrhoea.</li>
+
                                             <li><i class="fas fa-plus-circle"></i>conjunctivitis.</li>
+
                                             <li><i class="fas fa-plus-circle"></i>headache.</li>
+
                                             <li><i class="fas fa-plus-circle"></i>loss of taste or smell.</li>
+
                                             <li><i class="fas fa-plus-circle"></i>a rash on skin, or discolouration of fingers or toes.</li>
                                         </ul>
                                     </div>
@@ -168,7 +235,9 @@
                                         <p>Serious symptoms:</p>
                                         <ul>
                                             <li><i class="fas fa-plus-circle"></i>difficulty breathing or shortness of breath.</li>
+
                                             <li><i class="fas fa-plus-circle"></i>chest pain or pressure.</li>
+
                                             <li><i class="fas fa-plus-circle"></i>loss of speech or movement.</li>
                                         </ul>
                                     </div>
@@ -181,7 +250,7 @@
                 <div class="thumb-vc inverted">
                     <div class="row">
 
-                        <div class="col-md-6" data-aos="fade-right" data-aos-duration="1300">
+                        <div class=" col-lg-6 col-12" data-aos="fade-right" data-aos-duration="1300">
                             <div class="item-l">
                                 <div class="first-img">
                                     <img src="./img/vc.jpg" alt="">
@@ -197,7 +266,7 @@
                             </div>
                         </div>
 
-                        <div class="col-md-6 cl-df" data-aos="fade-left" data-aos-duration="1300">
+                        <div class=" col-lg-6 col-12 cl-df" data-aos="fade-left" data-aos-duration="1300">
                             <div class="item-r">
                                 <p>The world is in the midst of a COVID-19 pandemic. As WHO and partners work together on the response -- tracking the pandemic, advising on critical interventions, distributing vital medical supplies to those in need--- they
                                     are racing to develop and deploy safe and effective vaccines. </p>
@@ -229,7 +298,7 @@
 
                 <div class="row">
 
-                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1500">
+                    <div class="col-lg-4 col-md-12" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1500">
                         <div class="consequence-image">
                             <img src="./img/consequence1.jpg" alt="">
                             <div class="attribute-img">
@@ -239,7 +308,7 @@
                         </div>
                     </div>
 
-                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="350" data-aos-duration="1500">
+                    <div class="col-lg-4 col-md-12" data-aos="fade-up" data-aos-delay="350" data-aos-duration="1500">
                         <div class="consequence-image">
                             <img src="./img/consequence2.jpg" alt="">
                             <div class="attribute-img">
@@ -248,7 +317,7 @@
                         </div>
                     </div>
 
-                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="650" data-aos-duration="1500">
+                    <div class="col-lg-4 col-md-12" data-aos="fade-up" data-aos-delay="650" data-aos-duration="1500">
                         <div class="consequence-image">
                             <img src="./img/consequence3.jpg" alt="">
                             <div class="attribute-img">
@@ -263,10 +332,154 @@
             </div>
         </section>
 
-        <section class="action-end">
-            h1
+        <div class="overlay"></div>
+
+
+
+        <section class="action-end" id="end">
+            <div class="container">
+                <div class="title">
+                    <h1>What should we doooo ?</h1>
+                    <p>If COVID-19 is spreading in your community, stay safe by taking some simple precautions, such as physical distancing, wearing a mask, keeping rooms well ventilated, avoiding crowds, cleaning your hands, and coughing into a bent elbow
+                        or tissue. Check local advice where you live and work.</p>
+                </div>
+                <div class="action-list">
+                    <div class="title">
+                        <h1>Clean your hands</h1>
+                        <p>Regular handwashing is one of the best ways to remove germs, avoid getting sick, and prevent the spread of germs to others. Whether you are at home, at work, traveling, or out in the community, find out how handwashing with soap
+                            and water can protect you and your family.</p>
+                    </div>
+
+                    <div class="row inverted">
+                        <div class="col-md-4" data-aos="fade-up" data-aos-delay="650" data-aos-duration="1500">
+                            <div class="item-img ">
+                                <img src="./img/w1.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="col-md-4" data-aos="fade-up" data-aos-delay="350" data-aos-duration="1500">
+                            <div class="item-img ">
+                                <img src="./img/w2.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="col-md-4" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1500">
+                            <div class="item-img ">
+                                <img src="./img/w3.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="action-list">
+                    <div class="title">
+                        <h1>Spring clean</h1>
+                        <p>Why not use this free time to give your home a bit of a clean? You can reorgnise your room or move somethings around to keep things fresh. You might be surprised how rewarding it is!</p>
+                    </div>
+                    <div class="row inverted">
+                        <div class="col-md-4" data-aos="fade-in" data-aos-duration="2000">
+                            <div class="item-img ">
+                                <img src="./img/c1.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="col-md-4" data-aos="fade-in" data-aos-duration="2000">
+                            <div class="item-img ">
+                                <img src="./img/c2.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="col-md-4" data-aos="fade-in" data-aos-duration="2000">
+                            <div class="item-img ">
+                                <img src="./img/c3.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="action-list" data-aos="fade-left" data-aos-duration="1000">
+                    <div class="title">
+                        <h1>Exercise</h1>
+                    </div>
+                    <div class="row ">
+                        <div class="col-lg-6 col-12 inverted">
+                            <div class="change-w">
+                                <img src="./img/excercise.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-12">
+                            <div class="excercise-text">
+                                <div class="excercise-text-item">
+                                    <p>Physical activity you can do at home includes:</p>
+                                    <ul>
+                                        <li><i class="fas fa-plus-circle"></i>weights training </li>
+
+                                        <li><i class="fas fa-plus-circle"></i>yoga</li>
+
+                                        <li><i class="fas fa-plus-circle"></i>pilates</li>
+
+                                        <li><i class="fas fa-plus-circle"></i>backyard sports</li>
+
+                                        <li><i class="fas fa-plus-circle"></i>going up and down stairs</li>
+
+                                        <li><i class="fas fa-plus-circle"></i>on-the-spot running, star jumps, sit ups and push ups</li>
+
+                                        <li><i class="fas fa-plus-circle"></i>gardening</li>
+
+                                        <li><i class="fas fa-plus-circle"></i>virtual fitness classes</li>
+                                    </ul>
+                                </div>
+
+                                <div class="excercise-text-item">
+                                    <p>Physical activity you can do out side:</p>
+                                    <ul>
+                                        <li><i class="fas fa-plus-circle"></i>go to gyms, health clubs or fitness centres </li>
+
+                                        <li><i class="fas fa-plus-circle"></i>visit public swimming pools</li>
+
+                                        <li><i class="fas fa-plus-circle"></i>play indoor or outdoor organised sporting events</li>
+
+                                        <li><i class="fas fa-plus-circle"></i>use playgrounds or outdoor gyms</li>
+
+                                        <li><i class="fas fa-plus-circle"></i>exercise with a group such as a boot camp or team sport</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="action-list" data-aos="fade-right" data-aos-duration="1000">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="center-t">
+                                <p>Let's fight the pandemic together, we won't give up. <br> <br> Wearing a mask is more comfortable than wearing a ventilator . ❤</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="change-w inverted">
+                                <img src="./img/fine.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
+        <footer>
+            <div class="footer">
+                <div class="viruss-1">
+                    <i class="fas fa-virus"></i>
+                </div>
+                <div class="viruss-2">
+                    <i class="fas fa-virus"></i>
+                </div>
+                <div class="viruss-3">
+                    <i class="fas fa-viruses"></i>
+                </div>
+                <div class="viruss-4">
+                    <i class="fas fa-viruses"></i>
+                </div>
+
+            </div>
+        </footer>
     </div>
 
     <script src="./public/asset/jquery/Jquery.js"></script>
