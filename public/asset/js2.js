@@ -13,7 +13,15 @@ const iconBars = getElement('.icon-bars');
 const overlay = getElement('.overlay');
 const navMb = getElement('.navigation-mb');
 const iconTimes = getElement('.icon-times');
+const iconSearch = getElement('.search-location');
+const formCovid = getElement('.form-covid');
+const formSubmit = getElement('.form-covid form');
+const timesForm = getElement('.form-covid>i');
+const render_ = getElement('.render');
 
+
+
+const searchInput = getElement('.form-covid .form input');
 
 
 function handleEvents() {
@@ -38,10 +46,10 @@ function handleEvents() {
         btnsNavPc.forEach(btn => {
             btn.classList.remove('active')
             if (btn.classList.contains(current)) {
-                btn.classList.add('active')
+                btn.classList.add('active');
             }
         })
-    })
+    });
 
     btnsText.forEach((item, index) => {
         const content = textItem[index]
@@ -71,13 +79,53 @@ function handleEvents() {
     iconTimes.addEventListener('click', () => {
         navMb.classList.remove('active');
         overlay.classList.remove('active');
-    })
+    });
 
     overlay.addEventListener('click', () => {
         overlay.classList.remove('active');
         navMb.classList.remove('active');
-    })
+        formCovid.classList.remove('active');
+    });
 
+    iconSearch.addEventListener('click', () => {
+        formCovid.classList.add('active');
+        overlay.classList.add('active');
+    });
+
+    timesForm.addEventListener('click', () => {
+        formCovid.classList.remove('active');
+        overlay.classList.remove('active');
+    });
+
+    formSubmit.addEventListener('submit', (e) => {
+        e.preventDefault();
+        render_.innerHTML = '<p class="loading">Loading . . .</p>'
+        const location = searchInput.value;
+        getApi(location, render)
+    })
+}
+
+
+function getApi(location, data) {
+    const apiCovid = `https://api.covid19api.com/live/country/${location}`;
+
+    fetch(apiCovid)
+        .then((response) => {
+            return response.json()
+        })
+        .then(data)
+}
+
+function render(data) {
+    const currentDay = data[data.length - 1];
+    const html = `
+    <h2>Country: ${currentDay.Country} </h2>
+    <p>Confirmed : ${currentDay.Confirmed} cases <i class="fas fa-virus change-vr"></i></p>
+    <p>Deaths : ${currentDay.Deaths} </p>
+    <p>Date : ${currentDay.Date}</p>
+    `
+    render_.innerHTML = html;
+    console.log(currentDay)
 }
 
 handleEvents();
