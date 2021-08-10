@@ -239,7 +239,7 @@ a {
     z-index: 100;
     text-align: center;
     padding: 30px 12px;
-    transform: translateX(-100%);
+    transform: translateX(-101%);
     transition: .3s linear;
 }
 
@@ -443,7 +443,7 @@ a {
 .information-text .information-text-right .item-text {
     opacity: 0;
     display: none;
-    transition: .3s linear;
+    animation: opacity .5s linear;
 }
 
 .information-text .information-text-right .item-text.active {
@@ -638,10 +638,8 @@ a {
 
 .footer {
     position: relative;
-    margin-top: 50px;
-    height: 300px;
-    width: 100%;
     background-image: linear-gradient(360deg, #2193b0, #6dd5ed);
+    padding: 30px 0;
 }
 
 .viruss-1,
@@ -679,6 +677,63 @@ a {
     font-size: 1.25rem;
     top: 12px;
     left: 30px;
+}
+
+.footer .col-md-6 {
+    padding-left: 80px;
+}
+
+.footer .head {
+    position: relative;
+}
+
+.footer .head::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 180px;
+    height: 2px;
+    background-color: var(--bs-dark);
+}
+
+.footer a {
+    color: black;
+}
+
+.footer .about-us i {
+    padding-right: 12px;
+}
+
+.footer .about-us a:hover {
+    color: #e6e6e6;
+}
+
+.footer .flow-us a {
+    display: inline-block;
+    margin: 12px 4px 0 4px;
+    padding: 12px 15px;
+    border-radius: 100%;
+    background-color: #4da6ff;
+}
+
+.footer .flow-us a i {
+    display: inline-block;
+    width: 18px;
+    text-align: center;
+    color: var(--bs-white);
+}
+
+.footer .ft-bottom p {
+    text-align: center;
+    color: var(--bs-white);
+    letter-spacing: 4px;
+    margin: 0;
+}
+
+.footer .ft-bottom img {
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
 }
 
 @media screen and (max-width:1200px) {
@@ -756,13 +811,51 @@ a {
     .action-list .item-img {
         padding-bottom: 30px;
     }
+    .search-location {
+        flex-direction: column !important;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .footer .col-md-6 {
+        padding-bottom: 40px;
+        padding-left: 12px;
+    }
+    .search-location .description {
+        display: none;
+    }
+    .search-location i {
+        margin-right: 0 !important;
+    }
+    .information-text-left {
+        margin: 0 !important;
+    }
 }
 
 @media screen and (max-width:500px) {
+    .change-mdd-right {
+        flex-direction: column;
+    }
+    .search-location {
+        margin-bottom: 8px;
+    }
     .darkmode-btn .label {
-        margin-left: 8px;
+        margin-left: 0;
     }
     .slider img {
         height: 350px;
+    }
+    .form-covid {
+        width: 100%;
+    }
+    .footer {
+        padding: 30px 0 80px 0;
+    }
+    .viruss-1 {
+        bottom: 0;
+    }
+    .viruss-3 {
+        right: 16px;
+        bottom: 40%;
     }
 }

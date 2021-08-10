@@ -58,7 +58,7 @@
                         </div>
 
                         <div class="col-4">
-                            <div class="header-item">
+                            <div class="header-item change-mdd-right">
                                 <div class="search-location">
                                     <i class="fas fa-search"></i>
                                     <div class="description inverted">
@@ -336,7 +336,7 @@
             </div>
         </section>
 
-        <div class="overlay"></div>
+        <div class="overlay inverted"></div>
 
         <div class="form-covid">
             <div class="render">
@@ -355,7 +355,7 @@
         <section class="action-end" id="end">
             <div class="container">
                 <div class="title">
-                    <h1>What should we doooo ?</h1>
+                    <h1>What should we do ?</h1>
                     <p>If COVID-19 is spreading in your community, stay safe by taking some simple precautions, such as physical distancing, wearing a mask, keeping rooms well ventilated, avoiding crowds, cleaning your hands, and coughing into a bent elbow
                         or tissue. Check local advice where you live and work.</p>
                 </div>
@@ -494,10 +494,83 @@
                     <i class="fas fa-viruses"></i>
                 </div>
 
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="about-us">
+                                <h1 class="head">ABOUT-ME</h1>
+                                <p>Author : Nguyễn Thanh Hùng</p>
+                                <p>Id : 2050531200155</p>
+                                <p>Class : 20T1</p>
+                                <p>
+                                    <a href="tel:0898159717"> <i class="fas fa-phone"></i>Phone : 0898159717 </a>
+                                </p>
+                                <p>
+                                    <a href="mailto:anhkp222@gmail.com"> <i class="fas fa-envelope"></i>anhkp222@gmai.com</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="flow-us">
+                                <h1 class="head">FLOW-ME</h1>
+                                <a href="https://www.facebook.com/profile.php?id=100008092212616">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="https://www.instagram.com/kobe.2601/">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="https://twitter.com/NguynTh04313635">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/in/nguyen-thanh-hung-909293208/">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <a href="https://github.com/Thanhhung2601">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="ft-bottom">
+                                <p>This templete made by <img src="./img/author.jpg" class="inverted" alt=""> with ❤ </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </footer>
+
     </div>
 
+    <!-- Messenger Plugin chat Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Plugin chat code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+        var chatbox = document.getElementById('fb-customer-chat');
+        chatbox.setAttribute("page_id", "110349101346751");
+        chatbox.setAttribute("attribution", "biz_inbox");
+
+        window.fbAsyncInit = function() {
+            FB.init({
+                xfbml: true,
+                version: 'v11.0'
+            });
+        };
+
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
     <script src="./public/asset/jquery/Jquery.js"></script>
     <script src="./public/asset/owlcarousel/owl.carousel.min.js"></script>
     <script src="./public/asset/AOS/aos.js"></script>

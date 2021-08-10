@@ -19,10 +19,7 @@ const formSubmit = getElement('.form-covid form');
 const timesForm = getElement('.form-covid>i');
 const render_ = getElement('.render');
 
-
-
 const searchInput = getElement('.form-covid .form input');
-
 
 function handleEvents() {
 
@@ -122,7 +119,7 @@ function render(data) {
     <h2>Country: ${currentDay.Country} </h2>
     <p>Confirmed : ${currentDay.Confirmed} cases <i class="fas fa-virus change-vr"></i></p>
     <p>Deaths : ${currentDay.Deaths} </p>
-    <p>Date : ${currentDay.Date}</p>
+    <p>Date : ${currentDay.Date.slice(0,10)}</p>
     `
     render_.innerHTML = html;
     console.log(currentDay)
